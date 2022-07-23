@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8a9e5d82eb.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="/image/log.png">
+
+    <title>Blog</title>
+</head>
+
+<body>
+
+    <!-- Home Page -->
+
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><i class="fa-solid fa-graduation-cap"></i>MONTFORT UNIVERSITY</a>
+            <div class="nav-links">
+                <button onclick="showMenu()" class="showMenu" id="showMenu"><i class="fa fa-bars"></i> </button>
+                <ul id="navLinks">
+                    <span onclick="hideMenu()" id="hideMenu"><i class="fa fa-times" ></i></span>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+        </nav>
+        <h1>Our Certificate & Online Programs</h1>
+    </section>
+
+    <!-- Blog -->
+
+    <section class="blog-content">
+        <div class="blog-left">
+            <img src="/image/degree.webp" alt="">
+            <h2>Our Certificate & Online Programs</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis reprehenderit repellat culpa dolore, consequuntur dicta aspernatur architecto doloremque laboriosam maxime magni eius sint neque totam placeat, excepturi quidem iure distinctio!</p>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, minima. Atque ut, modi facere aliquam pariatur eaque accusamus. Aut adipisci molestiae aliquam ducimus laboriosam blanditiis expedita harum nam itaque cumque!</p>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, at Lorem ipsum dolor sit amet.</p>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio aut, culpa quas tempore ut laudantium, repudiandae natus modi nesciunt eius magnam adipisci dignissimos? Voluptates saepe ullam id dolore quam itaque ipsam, ex aliquid iure minima
+                eos quod adipisci voluptatem ducimus? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo, tempore.</p>
+            <br>
+            <div class="comment-box">
+                <h3>Leave a comment</h3>
+                <form name="my-form" method="post" class="comment-form">
+                    <input type="text" placeholder="Name">
+                    <input type="text" placeholder="Email">
+
+                    <textarea rows="6" placeholder="Your comment">
+                    </textarea>
+                    <button type="submit" class="hero-btn link-btn" onclick="done(); myFunction();">Post Your Comment</button>
+                </form>
+            </div>
+        </div>
+
+
+
+        <div class="blog-right">
+            <h3>Post Category</h3>
+            <div>
+                <span>Diploma</span>
+                <span>35</span>
+            </div>
+            <div>
+                <span>B-tech</span>
+                <span>50</span>
+            </div>
+            <div>
+                <span>MBA</span>
+                <span>45</span>
+            </div>
+            <div>
+                <span>M-Tech</span>
+                <span>30</span>
+            </div>
+            <div>
+                <span>PHD</span>
+                <span>25</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+
+    <section class="footer" id="about">
+        <h4>About Us</h4>
+        <p>We’re a leading research university with a heart. Founded in the decade that the U.S. Constitution was signed, we’re the nation’s oldest Catholic and Jesuit university.
+            <br> We’re a community of people who bridge our disparate experiences and identities. Meet the people and places that make Eduford home.</p>
+            <div class="icons">
+                <a href="https://www.facebook.com/rjsingh.rk/"><i class="fa fa-facebook"></i></a>
+                <a href="https://twitter.com/Rajkumar1521996"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.instagram.com/rjsingh.rk/"> <i class="fa fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/raj-kumar-b8b832140/"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        <p>Made by Raj Kumar</i>
+        </p>
+    </section>
+
+    <!--JavaScript -->
+
+    <script>
+        var navLi = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLi.style.display = "block";
+            document.getElementById("showMenu").style.display = "none";
+            document.getElementById("hideMenu").style.display = "block";
+        }
+
+        function hideMenu() {
+            navLi.style.display = "none";
+            document.getElementById("hideMenu").style.display = "none";
+            document.getElementById("showMenu").style.display = "block";
+        }
+
+        function done() {
+            alert('Comment Posted');
+        }
+
+        function myFunction() {
+            var frm = document.getElementsByName('my-form')[0];
+            frm.submit(); // Submit the form
+            frm.reset(); // Reset all form data
+            return false; // Prevent page refresh
+        }
+    </script>
+</body>
+
+</html>

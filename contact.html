@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8a9e5d82eb.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="/image/log.png">
+
+    <title>Contact</title>
+</head>
+
+<body>
+
+    <!-- Home page -->
+
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><i class="fa-solid fa-graduation-cap"></i>MONTFORT UNIVERSITY</a>
+            <div class="nav-links">
+                <button onclick="showMenu()" class="showMenu" id="showMenu"><i class="fa fa-bars"></i> </button>
+                <ul id="navLinks" class="nlink">
+                    <span onclick="hideMenu()" id="hideMenu"><i class="fa fa-times"></i></span>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+        </nav>
+        <h1>Contact Us</h1>
+    </section>
+
+
+    <section class="location">
+        <div class="mapouter">
+            <div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no"
+                    marginheight="0" marginwidth="0"
+                    src="https://maps.google.com/maps?width=739&amp;height=400&amp;hl=en&amp;q=montfort school bhopal&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a
+                    href="https://www.kokagames.com/fnf-friday-night-funkin-mods/">FNF Mods</a></div>
+            <style>
+                .mapouter {
+                    position: relative;
+                    text-align: right;
+                    width: 100%;
+                    height: 500px;
+                }
+
+                .gmap_canvas {
+                    overflow: hidden;
+                    background: none !important;
+                    width: 100%;
+                    height: 500px;
+                }
+
+                .gmap_iframe {
+                    height: 500px !important;
+                }
+            </style>
+        </div>
+
+    </section>
+
+    <!-- Contact us -->
+
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa fa-home"></i>
+                    <span>
+                        <h4>MontFort University, Bhopal Campus</h5>
+                            <p>Bhopal, Madhya Pradesh, India</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <span>
+                        <h4>+91 8770619226</h4>
+                        <p>Monday to Saturday, 10AM to 5PM</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-envelope-o"></i>
+                    <span>
+                        <h4>rajlyf18@gmail.com</h5>
+                            <p>Email us your queries</p>
+                    </span>
+                </div>
+            </div>
+            <div class="contact-col">
+                <form name="contact-form" method="post" id="myForm">
+                    <input type="text" name="name" placeholder="Enter your name" required="">
+                    <input type="email" name="email" placeholder="Enter email address" required="">
+                    <input type="text" name="subject" placeholder="Enter your subject" required="">
+                    <textarea rows="8" name="message" placeholder="Message" required=""></textarea>
+                    <button type="submit" class="hero-btn link-btn" onclick="done(); myFunction();">Send
+                        Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+
+    <section class="footer" id="about">
+        <h4>About Us</h4>
+        <p>We’re a leading research university with a heart. Founded in the decade that the U.S. Constitution was
+            signed, we’re the nation’s oldest Catholic and Jesuit university.
+            <br> We’re a community of people who bridge our disparate experiences and identities. Meet the people and
+            places that make Eduford home.
+        </p>
+        <div class="icons">
+            <a href="https://www.facebook.com/rjsingh.rk/"><i class="fa fa-facebook"></i></a>
+            <a href="https://twitter.com/Rajkumar1521996"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.instagram.com/rjsingh.rk/"> <i class="fa fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/raj-kumar-b8b832140/"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+        <p>Made by Raj Kumar</i>
+        </p>
+    </section>
+
+    <!--JavaScript -->
+
+    <script>
+        var navLi = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLi.style.display = "block";
+            document.getElementById("showMenu").style.display = "none";
+            document.getElementById("hideMenu").style.display = "block";
+        }
+
+        function hideMenu() {
+            navLi.style.display = "none";
+            document.getElementById("hideMenu").style.display = "none";
+            document.getElementById("showMenu").style.display = "block";
+        }
+
+        function done() {
+            alert('Message Sent');
+        }
+
+        function myFunction() {
+            var frm = document.getElementsByName('contact-form')[0];
+            frm.submit(); // Submit the form
+            frm.reset(); // Reset all form data
+            return false; // Prevent page refresh
+        }
+    </script>
+
+</body>
+
+</html>

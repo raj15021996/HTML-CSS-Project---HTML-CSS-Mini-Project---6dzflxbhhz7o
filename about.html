@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8a9e5d82eb.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="/image/log.png">
+
+    <title>About</title>
+</head>
+
+<body>
+
+    <!-- Home page -->
+
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><i class="fa-solid fa-graduation-cap"></i>MONTFORT UNIVERSITY</a>
+            <div class="nav-links">
+                <button onclick="showMenu()" class="showMenu" id="showMenu"><i class="fa fa-bars"></i> </button>
+                <ul id="navLinks">
+                    <span onclick="hideMenu()" id="hideMenu"><i class="fa fa-times"></i></span>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+        </nav>
+        <h1>About us</h1>
+    </section>
+
+    <!-- ---About us--- -->
+
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus, commodi?</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora vel ratione consequuntur facilis
+                    iste, nulla maxime soluta commodi architecto vero!</p>
+                <a href="index.html" class="hero-btn link-btn">EXPLORE NOW</a>
+            </div>
+            <div class="about-col">
+                <img src="/image/meeting.png">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+
+    <section class="footer" id="about">
+        <h4>About Us</h4>
+        <p>We’re a leading research university with a heart. Founded in the decade that the U.S. Constitution was
+            signed, we’re the nation’s oldest Catholic and Jesuit university.
+            <br> We’re a community of people who bridge our disparate experiences and identities. Meet the people and
+            places that make Eduford home.
+        </p>
+        <div class="icons">
+            <a href="https://www.facebook.com/rjsingh.rk/"><i class="fa fa-facebook"></i></a>
+            <a href="https://twitter.com/Rajkumar1521996"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.instagram.com/rjsingh.rk/"> <i class="fa fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/raj-kumar-b8b832140/"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+        <p>Made by Raj Kumar</i>
+        </p>
+    </section>
+
+    <!--JavaScript -->
+
+    <script>
+        var navLi = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLi.style.display = "block";
+            document.getElementById("showMenu").style.display = "none";
+            document.getElementById("hideMenu").style.display = "block";
+        }
+
+        function hideMenu() {
+            navLi.style.display = "none";
+            document.getElementById("hideMenu").style.display = "none";
+            document.getElementById("showMenu").style.display = "block";
+        }
+    </script>
+
+</body>
+
+</html>
