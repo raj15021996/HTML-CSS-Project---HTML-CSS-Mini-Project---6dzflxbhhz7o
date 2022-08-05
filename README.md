@@ -1,1 +1,2 @@
-# html-css-js-project-boilerplate
+# College Website using HTML CSS & Javascript
+# Responsive webpage
